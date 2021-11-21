@@ -23,9 +23,12 @@ public class CdPlayer {
         title = null;
         System.out.println(description + " eject");
     }
+    public void insert(String cd) {
+        this.title = cd;
+        System.out.println(description + " inserting \"" + title + "\"");
+    }
 
-    public void play(String title) {
-        this.title = title;
+    public void play() {
         currentTrack = 0;
         System.out.println(description + " playing \"" + title + "\"");
     }
